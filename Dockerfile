@@ -1,4 +1,4 @@
-FROM Ubuntu 20.04
+FROM ubuntu:20.04
 RUN apt-get update && apt-get install -y build-essential \
     sudo \
     cmake \
@@ -6,7 +6,6 @@ RUN apt-get update && apt-get install -y build-essential \
     clang-tidy \
     wget \
     lsb-release\
-    software-properties-common \
     git \
     python3 \
     python3-pip \
